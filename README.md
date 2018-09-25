@@ -7,7 +7,7 @@
 目標: 找出持續占用系統資源但並沒有執行任何具有實際作用的VM。
 
 ## Create 2~3 scenarios causing VM useless
-嘗試創造2-3種情況，使得VM無法正常運作，藉此來模擬所定義Zombie VM的使用情況
+首先使用2-3種情況，使得VM無法正常運作，藉此來模擬所定義Zombie VM的使用情況
 > Scenario 1: Fork bomb: :(){ :|: & };:   
 > Scenario 2: Use sysrq-trigger to test: echo “c” > /proc/sysrq-trigger   
 > Scenario 3: Insert a simple kernel module causing kernel panic: Dereference the NULL pointer
